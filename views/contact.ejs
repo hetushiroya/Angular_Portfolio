@@ -1,0 +1,58 @@
+
+<%- include partials\header.ejs %> 
+  
+<%- include partials/main_nav %> 
+<!DOCTYPE html>
+<html>
+<style>
+ #email, #contact, input[type=text] ,textarea, select {
+    width: 50%;
+    padding: 12px 10px;
+    margin: 8px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: content-box
+  }
+  
+    input[type=submit] {
+    width: 20%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  input[type=submit]:hover {
+    background-color: #45a049;
+  }
+
+  body{
+      background-color: aliceblue;
+  }
+  </style>
+        <form action="/home" style="padding-left:20px ;"> 
+        <div class="mb-3">
+        <div class="form-group">
+        <label for="fname">First name:</label><br>
+        </div>
+        <input type="text" id="fname" name="fname" placeholder="Enter your First name"><br>
+        <label for="lname">Last name:</label><br>
+        <input type="text" id="lname" name="lname" placeholder="Enter your Last name"><br>
+        <label for="contact">Contact No.:</label><br>
+        <input type="tel" id="contact" name="contact" placeholder="Enter your Conatct No."><br>
+        <label for="email">Email id:</label><br>
+        <input type="email" id="email" name="email" placeholder="Enter your Email id:"><br>
+        <label for="msg">Message:</label><br>
+        <textarea name="comment" placeholder="Enter your message here..."></textarea><br><br>
+        <input id="submit" type="submit" value="Submit"><a href="/home"></a>
+        </form> 
+    </div>
+</html>
+
+ </script>
+
+
+    <% include partials\footer.ejs %> 

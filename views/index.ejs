@@ -1,0 +1,28 @@
+<%- include partials\header.ejs %> 
+
+  <header>      
+    <%- include partials/main_nav %>
+  </header>
+  <main>
+  <body class="d-flex flex-column h-1000 mb-5" style="background-image: url('/Assets/images/bg.jpg');background-repeat: no-repeat; height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover ; color: #fff;
+  height: 400%;" >
+        <div class="row" style="height: 150%";> </div>
+          <% if(title == "Home") { %> 
+            <%- include partials/home %>
+          <%} else if(title == "About") { %> 
+            <%- include partials/about %>
+          <%} else if(title == "Services") { %> 
+            <%- include partials/services %>
+          <%} else if(title == "Projects") { %> 
+            <%- include partials/projects %>
+          <% } %>            
+        </div>
+    </main>  
+  </body>
+
+  <% include partials\bottom_nav.ejs %> 
+
+  <% include partials\footer.ejs %> 
