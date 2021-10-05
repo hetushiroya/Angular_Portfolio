@@ -6,7 +6,7 @@
     "start": "node ./server.js"
   },
   "engines": {
-    "node": "^12.00.0",
+    "node": "v12.18.2",
     "npm": "^6.0.0"
   },
   "dependencies": {
@@ -25,7 +25,7 @@
   "devDependencies": {},
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/hetushiroya/COMP229Assignment1.git"
+    "url": "git+https://github.com/hetushirogiya/COMP229Assignment1.git"
   },
   "author": "",
   "license": "ISC",
