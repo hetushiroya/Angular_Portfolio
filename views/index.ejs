@@ -1,7 +1,7 @@
-<%- include partials\header.ejs %> 
+<%- include partials/header.ejs %> 
 
   <header>      
-    <%- include partials/main_nav %>
+    <%- include partials/main_nav.ejs %>
   </header>
   <main>
   <body class="d-flex flex-column h-1000 mb-5" style="background-image: url('/Assets/images/bg.jpg');background-repeat: no-repeat; height: 100%;
@@ -11,18 +11,18 @@
   height: 400%;" >
         <div class="row" style="height: 150%";> </div>
           <% if(title == "Home") { %> 
-            <%- include partials/home %>
+            <%- include partials/home.ejs %>
           <%} else if(title == "About") { %> 
-            <%- include partials/about %>
+            <%- include partials/about.ejs %>
           <%} else if(title == "Services") { %> 
-            <%- include partials/services %>
+            <%- include partials/services.ejs %>
           <%} else if(title == "Projects") { %> 
-            <%- include partials/projects %>
+            <%- include partials/projects.ejs %>
           <% } %>            
         </div>
     </main>  
   </body>
 
-  <% include partials\bottom_nav.ejs %> 
+  <% include partials/bottom_nav.ejs %> 
 
-  <% include partials\footer.ejs %> 
+  <% include partials/footer.ejs %> 
